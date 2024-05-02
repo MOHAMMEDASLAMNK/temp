@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SRC='src=\"/wp-content/uploads'
+
+DST='src=\"https://dompv2gzbr86x.cloudfront.net'
+
+find . -type f -name "amrita.sql" -exec sed -i "s,$SRC,$DST,g" {} \;
