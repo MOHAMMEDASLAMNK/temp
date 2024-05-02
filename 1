@@ -1,0 +1,4 @@
+#!/bin/bash
+SRC='https://www\n.amrita.edu/wp-content/uploads'
+DST='https://dompv2gzbr86x.cloudfront.net'
+find . -type f -name "amrita.sql" -exec sed -i "s,$SRC,$DST,g" {} \;
